@@ -59,7 +59,7 @@ class FilterHelper
         $namespace = $root->namespaceURI;
         $prefix = $root->prefix;
         if (null !== $mustUnderstand) {
-            $node->appendChild(new \DOMAttr($prefix . ':mustUnderstand', (int) $mustUnderstand));
+            $node->appendChild(new \DOMAttr($prefix . ':mustunderstand', (int) $mustUnderstand));
         }
         if (null !== $actor) {
             $attributeName = ($soapVersion == SOAP_1_1) ? 'actor' : 'role';
